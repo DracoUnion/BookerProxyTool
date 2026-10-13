@@ -1,0 +1,4 @@
+requests[socks]
+sqlalchemy
+flask
+camoufox
