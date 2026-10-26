@@ -2,12 +2,16 @@
 # -*- coding: utf-8 -*-
 
 import argparse
+import sys
 
 from . import __version__
 from . import scan, crawl, forward, test, click
 
 
 def main():
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
     parser = argparse.ArgumentParser(
         prog='BookerProxyTool', description='iBooker 代理工具',
         formatter_class=argparse.RawDescriptionHelpFormatter,
